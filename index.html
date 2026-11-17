@@ -1,0 +1,618 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#190d25">
+<title>Happy Birthday Lozieey ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: #190d25;
+    overflow-x: hidden;
+}
+
+:root {
+    --pink: #ff79aa;
+    --gold: #ffd99b;
+    --purple: #4a235a;
+}
+
+section {
+    padding: 85px 20px;
+    text-align: center;
+}
+
+.script {
+    font-family: 'Great Vibes', cursive;
+    color: var(--pink);
+    font-weight: normal;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background:
+      radial-gradient(circle at 20% 20%, #793d70 0, transparent 40%),
+      radial-gradient(circle at 80% 80%, #55245f 0, transparent 40%),
+      linear-gradient(135deg, #190d25, #32152f);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 2;
+    padding: 20px;
+}
+
+.small-title {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--gold);
+}
+
+.hero h1 {
+    font-size: clamp(48px, 12vw, 85px);
+    margin: 20px 0;
+    text-shadow: 0 0 30px #ff79aa88;
+}
+
+.hero p {
+    color: #f6d8e9;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.cake {
+    font-size: 95px;
+    margin: 20px 0;
+    animation: bounce 2s infinite;
+    filter: drop-shadow(0 0 20px #ff8bbd);
+}
+
+@keyframes bounce {
+    50% { transform: translateY(-15px); }
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid #ffc2da;
+    color: white;
+    background: linear-gradient(135deg, #e84f91, #8b3a92);
+    padding: 14px 28px;
+    border-radius: 40px;
+    margin: 12px 5px;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 5px 25px #e84f9166;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px #e84f91aa;
+}
+
+.glass {
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.15);
+    backdrop-filter: blur(12px);
+    border-radius: 22px;
+}
+
+.section-title {
+    font-size: clamp(35px, 8vw, 55px);
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #d9b9ce;
+    font-size: 13px;
+    line-height: 2;
+    margin-bottom: 35px;
+}
+
+.message-card {
+    max-width: 650px;
+    padding: 30px;
+    margin: auto;
+    line-height: 2.1;
+    color: #f8e9f1;
+    font-size: 14px;
+}
+
+.message-card .script {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 15px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.photo {
+    height: 220px;
+    overflow: hidden;
+    border: 2px solid #ff9fc6;
+    border-radius: 17px;
+    background: linear-gradient(145deg, #62365e, #29172f);
+    box-shadow: 0 5px 25px #0005;
+    cursor: pointer;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.photo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #ffd3e6;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.letter {
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    text-align: left;
+    line-height: 2.2;
+    color: #f9e7f0;
+    font-size: 14px;
+}
+
+.letter h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.surprise-box {
+    max-width: 550px;
+    margin: auto;
+    padding: 30px;
+}
+
+.gift {
+    font-size: 85px;
+    cursor: pointer;
+    display: inline-block;
+    animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(-8deg); }
+    75% { transform: rotate(8deg); }
+}
+
+#secret {
+    display: none;
+    margin-top: 25px;
+    line-height: 2;
+    color: #ffd7e9;
+    animation: appear 1s ease;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.countdown {
+    font-size: 23px;
+    color: var(--gold);
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    color: #d7b1c8;
+    font-size: 12px;
+}
+
+.heart, .petal {
+    position: fixed;
+    pointer-events: none;
+    z-index: 5;
+    bottom: -30px;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+#musicBtn {
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    z-index: 10;
+    border-radius: 50px;
+    padding: 12px 17px;
+    background: #a63d7d;
+    color: white;
+    border: 1px solid #ffc1df;
+    cursor: pointer;
+}
+
+#topBtn {
+    position: fixed;
+    left: 15px;
+    bottom: 20px;
+    z-index: 10;
+    border: none;
+    border-radius: 50%;
+    padding: 13px;
+    background: #a63d7d;
+    color: white;
+    cursor: pointer;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    background: #08030ddd;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#lightbox img {
+    max-width: 95%;
+    max-height: 85vh;
+    border: 3px solid pink;
+    border-radius: 15px;
+}
+
+@media(max-width: 480px) {
+    section { padding: 65px 15px; }
+    .photo { height: 180px; }
+}
+</style>
+</head>
+
+<body>
+
+<audio id="music" loop>
+    <source src="music/birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" onclick="toggleMusic()">🎵 Play Music</button>
+<button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- WELCOME -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <div class="small-title">A little celebration of someone special</div>
+
+        <h1 class="script">Happy Birthday</h1>
+
+        <h2 style="letter-spacing:5px;color:#ffe2ef;">
+            LOZIEEY ❤️
+        </h2>
+
+        <div class="cake">🎂</div>
+
+        <p>
+            Today the world celebrates a beautiful soul.
+            <br>
+            And this little surprise is specially for you.
+        </p>
+
+        <br>
+
+        <button class="btn" onclick="startSurprise()">
+            Open Your Birthday Surprise 💝
+        </button>
+
+        <p style="margin-top:30px;color:#ffd5e5;">
+            ↓ Scroll down for more surprises ↓
+        </p>
+    </div>
+
+</section>
+
+<!-- BIRTHDAY MESSAGE -->
+<section id="celebration">
+
+    <h2 class="script section-title">
+        To You, Lozieey
+    </h2>
+
+    <p class="subtitle">
+        A beautiful day for a beautiful soul.
+    </p>
+
+    <div class="message-card glass">
+        <p class="script">Dear Lozieey, ❤️</p>
+
+        Happy Birthday to you!
+
+        Today is a reminder of how special you are.
+        I hope your day is filled with laughter,
+        beautiful memories, genuine happiness and
+        countless reasons to smile.
+
+        May this new chapter bring you peace,
+        growth, good health, endless opportunities
+        and everything your heart has been wishing for.
+
+        Never stop being the beautiful person you are.
+
+        <br><br>
+
+        <strong style="color:#ffc0dc;">
+            You deserve all the beautiful things life has to offer. ❤️
+        </strong>
+    </div>
+
+</section>
+
+<!-- PHOTO GALLERY -->
+<section id="gallery">
+
+    <h2 class="script section-title">Beautiful Memories 📸</h2>
+
+    <p class="subtitle">
+        Every picture tells a little story.
+        Here's a gallery dedicated to you.
+    </p>
+
+    <div class="gallery">
+
+        <div class="photo" onclick="openPhoto(this)">
+            <img src="photos/lozieey1.jpg"
+                 alt="Lozieey memory"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='<div class=photo-placeholder>📸 Add her first photo here</div>'">
+        </div>
+
+        <div class="photo" onclick="openPhoto(this)">
+            <img src="photos/lozieey2.jpg"
+                 alt="Lozieey memory"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='<div class=photo-placeholder>💕 Add her second photo here</div>'">
+        </div>
+
+        <div class="photo" onclick="openPhoto(this)">
+            <img src="photos/lozieey3.jpg"
+                 alt="Lozieey memory"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='<div class=photo-placeholder>🌹 Add her third photo here</div>'">
+        </div>
+
+    </div>
+
+    <p class="subtitle" style="margin-top:20px;">
+        Made with love, just for you.
+    </p>
+
+</section>
+
+<!-- ROMANTIC LETTER -->
+<section id="letter">
+
+    <h2 class="script section-title">A Little Letter 💌</h2>
+
+    <p class="subtitle">
+        Some words deserve a special place.
+    </p>
+
+    <div class="letter glass">
+
+        <h3 class="script" style="font-size:38px;">
+            My Birthday Wish For You
+        </h3>
+
+        Lozieey,
+
+        I may not have the perfect words to describe
+        how wonderful you are, but I hope this little
+        gift brings a smile to your face.
+
+        I wish you a life full of beautiful surprises,
+        people who genuinely appreciate you,
+        dreams that come true and moments
+        that make your heart feel alive.
+
+        May you always find reasons to believe
+        in yourself, even on the difficult days.
+
+        Keep smiling, keep shining and never forget
+        how precious your existence is.
+
+        <br><br>
+
+        <p style="text-align:center;color:#ffb7d5;">
+            Happy Birthday, beautiful! ❤️
+        </p>
+
+        <p style="text-align:right;color:#ffd89e;">
+            With love, ❤️
+        </p>
+
+    </div>
+
+</section>
+
+<!-- HIDDEN GIFT -->
+<section id="gift">
+
+    <h2 class="script section-title">One Last Surprise 🎁</h2>
+
+    <p class="subtitle">
+        There's something waiting for you.
+    </p>
+
+    <div class="surprise-box glass">
+
+        <div class="gift" onclick="revealSecret()">🎁</div>
+
+        <p>Tap the gift to unlock your secret message.</p>
+
+        <div id="secret">
+            <h2 class="script" style="font-size:40px;">
+                You are one of a kind! ❤️
+            </h2>
+
+            <p>
+                If I could wish one thing for you today,
+                it would be that your heart never runs
+                out of reasons to be happy.
+
+                May your smile always find its way back,
+                may your dreams become reality,
+                and may your journey be more beautiful
+                than you ever imagined.
+
+                <br><br>
+
+                Happy Birthday, Lozieey! 🌹
+            </p>
+
+            <div style="font-size:45px;">❤️ 🌹 ✨</div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="script" style="font-size:35px;">
+        Made with love ❤️
+    </div>
+
+    A special birthday creation for Lozieey.
+
+    <br><br>
+
+    © Birthday Memories
+</footer>
+
+<!-- IMAGE LIGHTBOX -->
+<div id="lightbox" onclick="this.style.display='none'">
+    <img id="largePhoto" src="" alt="Birthday memory">
+</div>
+
+<script>
+
+const music = document.getElementById("music");
+const musicBtn = document.getElementById("musicBtn");
+
+function toggleMusic() {
+     if (music.paused) {
+        music.play().then(() => {
+            musicBtn.innerHTML = "⏸ Pause Music";
+        }).catch(() => {
+            alert("Add your birthday-song.mp3 file to the music folder first.");
+        });
+    } else {
+        music.pause();
+        musicBtn.innerHTML = "🎵 Play Music";
+    }
+}
+
+function startSurprise() {
+    document.getElementById("celebration").scrollIntoView({
+        behavior: "smooth"
+    });
+
+    music.play().then(() => {
+        musicBtn.innerHTML = "⏸ Pause Music";
+    }).catch(() => {
+        musicBtn.innerHTML = "🎵 Play Music";
+    });
+
+    burstHearts();
+}
+
+function revealSecret() {
+    const secret = document.getElementById("secret");
+
+    secret.style.display = "block";
+
+    burstHearts();
+
+    document.getElementById("gift").scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}
+
+function openPhoto(element) {
+    const img = element.querySelector("img");
+
+    if (!img || img.style.display === "none") return;
+
+    document.getElementById("largePhoto").src = img.src;
+    document.getElementById("lightbox").style.display = "flex";
+}
+
+function createFloating() {
+    const item = document.createElement("div");
+
+    const symbols = ["❤️", "💕", "🌹", "✨", "💗"];
+    item.className = Math.random() > .75 ? "petal" : "heart";
+    item.innerHTML = symbols[Math.floor(Math.random()*symbols.length)];
+
+    item.style.left = Math.random()*100 + "vw";
+    item.style.fontSize = (15 + Math.random()*20) + "px";
+    item.style.animationDuration = (5 + Math.random()*5) + "s";
+    item.style.opacity = Math.random()*.6 + .3;
+
+    document.body.appendChild(item);
+
+    setTimeout(() => item.remove(), 10000);
+}
+
+function burstHearts() {
+    for (let i=0; i<30; i++) {
+        setTimeout(createFloating, i*70);
+    }
+}
+
+setInterval(createFloating, 600);
+
+</script>
+
+</body>
+</html>
+
